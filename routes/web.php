@@ -10,7 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
  */
-Route::get('/admin', 'Auth\LoginController@showLoginForm');
+
+Route::get('/admin/login', 'Auth\LoginController@showLoginForm')->name('form.login');
 Route::post('login', 'Auth\LoginController@login')->name('login');
 Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 

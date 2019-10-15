@@ -18,6 +18,8 @@ class AddColumnToHomesTable extends Migration
             $table->integer('garden')->default(0);
             $table->integer('sauna')->default(0);
             $table->integer('gym')->default(0);
+            $table->string('latitude')->nullable();
+            $table->string('longitude')->nullable();
         });
     }
 

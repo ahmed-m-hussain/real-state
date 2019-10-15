@@ -6,14 +6,8 @@
     <title>Log in</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <!-- Bootstrap 3.3.7 -->
-    <link rel="stylesheet" href="{{asset('bower_components/bootstrap/dist/css/bootstrap.min.css')}}">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="{{asset('bower_components/font-awesome/css/font-awesome.min.css')}}">
-    <!-- Ionicons -->
-    <link rel="stylesheet" href="{{asset('bower_components/Ionicons/css/ionicons.min.css')}}">
-    <!-- Theme style -->
-    <link rel="stylesheet" href="{{ asset('bower_components/admin-lte/dist/css/AdminLTE.min.css') }}">
+    <link rel="stylesheet" href="{{ mix('/admin/dist/css/all.css') }}">
+
     <link rel="stylesheet" href="{{ asset('/css/custom.css') }}">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -34,11 +28,7 @@
     @yield('content')
 </main>
 {{--</div>--}}
-<!-- jQuery 3 -->
-<script src="{{asset('bower_components/jquery/dist/jquery.js')}}"></script>
-<!-- Bootstrap 3.3.7 -->
-<script src="{{asset('bower_components/bootstrap/dist/js/bootstrap.min.js')}}"></script>
-<!-- AdminLTE App -->
+<script src="{{ mix('/admin/dist/js/all.js') }}"></script>
 
 @yield('scripts')
 </body>
